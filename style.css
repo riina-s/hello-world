@@ -1,1 +1,36 @@
 
+body {
+    width: 1000px;
+    margin: 0px auto;
+    background-color: ivory;
+    color: grey;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #153679;
+}
+
+p {
+    background-color: lavender;
+    font-size: 16px;
+    color: darkblue;
+}
+
+
+ol {
+    list-style-type: lower-latin;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.info {
+    border: 2px dotted black;
+}
+
