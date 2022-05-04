@@ -1,36 +1,128 @@
-
 body {
     width: 1000px;
     margin: 0px auto;
-    background-color: ivory;
-    color: grey;
+    color: black;
+    background-color: #faf0e6;
+    font-family: 'Alata', sans-serif;
 }
 
+/*text*/
 h1 {
-    font-size: 35px;
+    text-align: center;
+    margin: 35px auto;
+    padding: 10px;
+    font-size: 3em;
+    text-transform: uppercase;
+    border-bottom: 5px solid salmon
 }
 
 h2 {
-    font-size: 20px;
-    color: #153679;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1em;
 }
 
 p {
-    background-color: lavender;
-    font-size: 16px;
-    color: darkblue;
+    text-align: left;
+    font-size: 1em;
+}
+
+/*NAV*/
+.nav {
+    text-align: center;
+    margin: 20px 0px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 8px 50px;   
+    border: white 1.5px solid;
+    border-radius: 5px;
+    background-color: #b1bca0;
+}
+
+a:visited {
+    color: rgb(149, 42, 175);
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 
-ol {
-    list-style-type: lower-latin;
+/*figure*/
+#figure-box {
+    font-size: 0.75em;
 }
 
-ul {
-    list-style-type: square;
+#figure {
+    object-fit: cover;
 }
 
-.info {
-    border: 2px dotted black;
+
+/*interests*/
+#info-box {
+    margin: 10px;
+    width: 60%;
+    float: left;
+    position: relative;
 }
 
+
+/*progress*/
+.progress-element {
+    display: block;
+    margin: 10px;
+    width: 33%;
+    float: right;
+    position: relative;
+}
+
+label {
+    padding-right: 10px;
+}
+
+#progress-bar-1, #progress-bar-2{
+    position: relative;
+    display: block;
+}
+
+.progress-description {
+    text-align: left;
+    font-size: 0.75em;
+}
+
+
+#banner {
+    max-width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+footer {
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #263e21;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
