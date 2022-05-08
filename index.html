@@ -3,6 +3,7 @@
     <head>
         <title>My Pages</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="flex.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,47 +15,74 @@
     </head>
 
     <body>
-        <div>
-         
+        <div class="header">
         <h1>Riina Salminen</h1>
+        </div>
 
         <div class="nav">
             <ul>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="portfolio.html">My Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
-            <p>Hi! I'm currently studying a course called Introduction to Web Development. 
-            At the moment I work as a marketing designer and I spend my work days designing print advertisements
-            and display banners.
-            <br>
-            Although designing is something I want to do I have always been interested in web development. 
-            </p>
-        </div>
+        <div class="flex-container">
+            <div class="section">
+                <h2>About</h2>
+                <p>Hi! I'm currently studying a course called Introduction to Web Development. 
+                At the moment I work as a marketing designer and I spend my work days designing
+                print advertisements and other marketing materials. 
+                Although designing is something I want to do I have always been interested in web development. 
+                </p>
+            </div>
+              
+            <div class="article">
+                <h2><b>Education</b></h2>
+                    <ol>
+                        <li>Bachelor of Business Administration - Turku University of Applied Sciences</li>
+                        <li>Seamstress - Länsirannikon Koulutus Oy WinNova</li>
+                    </ol>
+                <br>
+                <h2><b>Work experience</b></h2>
+                    <article>
+                        <h3> Motonet</h3>
+                        <p> Marketing designer</p>
+                    </article>
+                    <br>
+                    <article>
+                        <h3> OP</h3>
+                        <p> Marketing intern</p>
+                    </article>
+                    <br>
+                    <article>
+                        <h3> Turun kesäyliopisto</h3>
+                        <p> Marketing intern</p>
+                    </article>
+            </div>
 
-        <div class="info">
-            <h2><b>Education</b></h2>
-            <ol>
-                <li>Turku University of Applied Sciences</li>
-                <li>Länsirannikon Koulutus Oy WinNova</li>
-            </ol>
+            <div class="aside">
+                <h2><b>Skills</b></h2>
+                <ul>
+                    <li>marketing</li>
+                    <li>graphic design</li>
+                    <li>web development</li>
+                    <li>sewing</li>
+                </ul>
+            </div>
 
-            <h2><b>Skills</b></h2>
-            <ul>
-                <li>marketing</li>
-                <li>graphic design</li>
-            </ul>
-        </div>
+        </div>    
 
-   
         <div>
             <img id="banner" src="img/leaves.png" alt="leaves" style= "width: 100%;">
         </div>
         
-        <footer>
-            <p>Riina Salminen</p>
+        <footer id="contact">
+            <p>Contact</p>
+            <address>
+                <p><a href="mailto:example@example.com">example@example.com</a></p>
+                <p><a href="tel:+358000000000">+358 00 000 0000</a></p>
+            </address>
         </footer>
-
-
     </body>
 </html>

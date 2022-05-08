@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     width: 1000px;
     margin: 0px auto;
@@ -19,6 +23,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     text-transform: uppercase;
+    color: #263e21;
 }
 
 h3 {
@@ -30,7 +35,7 @@ p {
     font-size: 1em;
 }
 
-/*NAV*/
+/*NAVIGATION*/
 .nav {
     text-align: center;
     margin: 20px 0px;
@@ -53,15 +58,17 @@ p {
     background-color: #b1bca0;
 }
 
-a:visited {
-    color: rgb(149, 42, 175);
+a {
+    color: white;
 }
 
 a:hover {
     color: white;
-    text-decoration: underline;
 }
 
+.aside {
+    background-color: #b1bca0;
+}
 
 /*figure*/
 #figure-box {
@@ -71,6 +78,7 @@ a:hover {
 #figure {
     object-fit: cover;
 }
+
 
 
 /*interests*/
@@ -112,17 +120,17 @@ label {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-
-footer {
+/*footer elements*/
+#contact {
     margin-bottom: 20px;
     padding: 5px;
     background-color: #263e21;
     color: white;
+    text-align: center;
 }
 
-footer p {
+#contact p {
     text-align: center;
 }
