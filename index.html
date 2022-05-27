@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <meta name="keywords" content="portfolio">
         <meta name="description" content="Riina Salminen portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +18,23 @@
 
     <body>
         <div class="header">
-        <h1>Riina Salminen</h1>
+                <h1>Riina Salminen</h1>
+                <img src="img/profilepic.jpg" alt="Profile picture">
         </div>
 
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="portfolio.html">My Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
 
         <div class="flex-container">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-fw fa-home"></i></a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-fw fa-search"></i></a></li>
+                    <li><a href="index.html#aside-contact"><i class="fa fa-fw fa-envelope"></i></a></li>
+                </ul>
+            </div>
+
+
             <div class="section">
-                <h2>About</h2>
+                <h2>About me</h2>
                 <p>Hi! I'm currently studying a course called Introduction to Web Development. 
                 At the moment I work as a marketing designer and I spend my work days designing
                 print advertisements and other marketing materials. 
@@ -38,15 +43,18 @@
             </div>
               
             <div class="article">
-                <h2><b>Education</b></h2>
-                    <ol>
+                <div>
+                <h2>Education</h2>
+                    <ul>
                         <li>Bachelor of Business Administration - Turku University of Applied Sciences</li>
                         <li>Seamstress - Länsirannikon Koulutus Oy WinNova</li>
-                    </ol>
+                    </ul>
+                </div>
+    
                 <br>
-                <h2><b>Work experience</b></h2>
+                <h2>Work experience</h2>
                     <article>
-                        <h3> Motonet</h3>
+                        <h3>Motonet</h3>
                         <p> Marketing designer</p>
                     </article>
                     <br>
@@ -62,27 +70,53 @@
             </div>
 
             <div class="aside">
-                <h2><b>Skills</b></h2>
-                <ul>
-                    <li>marketing</li>
-                    <li>graphic design</li>
-                    <li>web development</li>
-                    <li>sewing</li>
-                </ul>
-            </div>
+                        <div id="aside-interests">
+                        <h2>Interests</h2>
+                            <ul>
+                                <li>Powerlifting</li>
+                                <li>DIY and crafts</li>
+                                <li>Investing</li>
+                            </ul>
+                        </div>
+  
+                <div id="aside-progress">
+                    
+                        <h2>Skills</h2>
+                        <h3>Languages</h3>
 
+                        <div class="progress-element">
+                        <label for="progress-bar-1">Finnish</label>
+                        <progress id="progress-bar-1" max="100" value="100"></progress>
+                
+                        <label for="progress-bar-2">English</label>
+                        <progress id="progress-bar-2" max="100" value="85"></progress>
+                        
+                        <label for="progress-bar-3">Swedish</label>
+                        <progress id="progress-bar-3" max="100" value="30"></progress>
+                
+                        <label for="progress-bar-4">Russian</label>
+                        <progress id="progress-bar-4" max="100" value="10"></progress>
+                        </div>
+        
+                </div>
+
+                <div id="aside-contact">
+                        <h2>Contact</h2>
+                            <address>
+                                <p><a href="mailto:example@example.com">example@example.com</a></p>
+                                <p><a href="tel:+358000000000">+358 00 000 0000</a></p>
+                            </address>                           
+                        </div>
+            </div>    
         </div>    
 
         <div>
             <img id="banner" src="img/leaves.png" alt="leaves" style= "width: 100%;">
         </div>
         
-        <footer id="contact">
-            <p>Contact</p>
-            <address>
-                <p><a href="mailto:example@example.com">example@example.com</a></p>
-                <p><a href="tel:+358000000000">+358 00 000 0000</a></p>
-            </address>
+        <footer>
+            <p>Riina Salminen</p>
+            <p>pixabay.com</p>
         </footer>
     </body>
 </html>
